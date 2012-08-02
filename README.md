@@ -1,6 +1,23 @@
 # Mongo Analyzer
 
-This is Java library to analyze, and fix, MongoDB inconsistencies in references across multiple collections. It can just analyze and report inconsistencies, or optionally fix them automatically by removing dead references.
+This is a Java library to discover, and fix, MongoDB inconsistencies in references across multiple collections. It can just analyze the database and report inconsistencies, or optionally fix them automatically by removing dead references.
+
+# Maven
+
+You can use it with Maven:
+
+```xml
+<repository>
+    <id>mashape-snapshots</id>
+    <url>https://github.com/Mashape/MVNRepo/raw/master/snapshots</url>
+</repository>
+
+<dependency>
+    <groupId>com.mashape.mongo.analyzer</groupId>
+    <artifactId>mongo-analyzer</artifactId>
+    <version>1.0</version>
+</dependency>
+```
 
 # Usage
 
