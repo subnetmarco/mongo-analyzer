@@ -1,6 +1,6 @@
 # Mongo Analyzer
 
-This is Java library to analyze, and fix, inconsistencies in MongoDB references across multiple collections.
+This is Java library to analyze, and fix, MongoDB inconsistencies in references across multiple collections. It can just analyze and report inconsistencies, or optionally fix them automatically by removing dead references.
 
 # Usage
 
@@ -39,7 +39,7 @@ new MongoConsistency().analyzeWithBlacklistAndUpdate(database, blacklist);
 
 By default `MongoConsistency` uses a simple implementation of `AnalyzerProgress` that outputs the results to `stdout` (that is `BasicAnalyzerProgress`). You can build your own implementation, like:
 
-```
+```java
 public class CustomProgress implements AnalyzerProgress {
 
 	@Override
@@ -65,6 +65,6 @@ public class CustomProgress implements AnalyzerProgress {
 
 And then initialize `MongoConsistency` like:
 
-```
+```java
 new MongoConsistency(new CustomProgress());
 ```
