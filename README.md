@@ -45,7 +45,7 @@ blacklist.add("collection2");
 new MongoConsistency().analyzeWithBlacklist(database, blacklist);
 
 // Analyze the whole database, excluding the collections in the blacklist, and fix inconsistencies by removing dead references
-List<String> blacklist = new ArrayList<String>();
+blacklist = new ArrayList<String>();
 blacklist.add("collection1");
 blacklist.add("collection2");
 
