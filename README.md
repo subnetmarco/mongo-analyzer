@@ -37,7 +37,6 @@ new MongoConsistency().analyze("mycollection", database);
 // Analyze a specific collection and fix inconsistencies by removing dead references
 new MongoConsistency().analyzeAndUpdate("mycollection", database);
 
-
 List<String> blacklist = new ArrayList<String>();
 blacklist.add("collection1");
 blacklist.add("collection2");
