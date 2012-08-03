@@ -1,4 +1,4 @@
-package com.mashape.mongo.analyzer.mongoconsistency;
+package com.mashape.mongo.analyzer;
 
 import java.util.Set;
 
