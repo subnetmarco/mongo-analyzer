@@ -52,7 +52,7 @@ blacklist.add("collection2");
 new MongoConsistency().analyzeWithBlacklistAndUpdate(database, blacklist);
 ```
 
-# Custom progress analyzer
+# Custom progress reporting
 
 By default `MongoConsistency` uses a simple implementation of `AnalyzerProgress` that outputs the results to `stdout` (that is `BasicAnalyzerProgress`). You can build your own implementation, like:
 
